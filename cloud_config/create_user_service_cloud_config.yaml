@@ -6,7 +6,7 @@ init: None
 role: arn:aws:iam::400029180276:instance-profile/swarm_access
 region: us-east-1a
 type: t2.micro
-securityId: ['sg-861b62cc']
+securityId: ['sg-9569addf', 'sg-eade92a1']
 key: DLNAkey
-securityGroup: ['test_web_server_security_group']
+securityGroup: ['HTTP_HTTPS', 'SSH']
 name: create_user_service
