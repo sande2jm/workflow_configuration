@@ -2,9 +2,8 @@
 # Description of aws ec2 instance
 
 ami: ami-a4dc46db
-init: 'sudo apt-get update \n
-       sudo apt-get install docker -y
-       sudo apt-get install docker.io -y'
+init: ['sudo apt-get update', 'sudo apt-get install docker -y', 
+'sudo apt-get install docker.io -y']
 role: arn:aws:iam::400029180276:instance-profile/swarm_access
 region: us-east-1a
 type: t2.micro
